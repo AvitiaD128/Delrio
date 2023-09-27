@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de celda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            height: 35px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de celda</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="id_preso">1. Tipo de Celda:</label>
+                <input type="text" id="id_preso" name="id_preso" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">2. No de Celda:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">3. Id Preso:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha_nacimiento">4. No Presos</label>
+                <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">5. Nivel de Seguridad:</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">6. Ubicacion:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div>
+            <label for="motivo_encierro">8. No camas:</label>
+            <input type="text" id="motivo_encierro" name="motivo_encierro" required>
+        </div>
+            <div class="form-group">
+                <label for="motivo_encierro">8. Guardias:</label>
+                <input type="text" id="motivo_encierro" name="motivo_encierro" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffaa80;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff5100;
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+
+nav {
+  background-color: #ff5100;
+  color: white;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+nav ul li a:hover {
+  background-color: #ff9823; /* Cambio de color al pasar el mouse */
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #ff5100; /* Color azul para el pie de página */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span{
+  font-weight: bolder;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="tablaprisioneros.html">Tabla Prisionerso</a>
+  <a href="tablaguardias.html">Tabla Guardias</a>
+  <a href="tablaceldas.html">Tabla NoCeldas</a>
+  <a href="tabladetallesdepreso.html">Tabla detalles de preso</a>
+  <a href="tablasntencias.html">Tabla Sentencia</a>
+</div>
+
+<header>
+  <main>
+    
+  <h1>CERESO 128</h1>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+   
+</header>
+
+<nav>
+  <ul>
+    <li><a href="fotmularioi preso.html">Prisioneros</a></li>
+    <li><a href="formulario Guar.html">Gaurdias</a></li>
+    <li><a href="formulario celda.html">Celdas</a></li>
+    <li><a href="formulario sentencias.html">Sentencia</a></li>
+    <li><a href="formulario detalles de preso.html">Detalles del Preso</a></li>
+  </ul>
+</nav>
+<center>
+  <h2>Cereso 128</h2>
+  <h4><span> función principal de un CERESO es la de rehabilitar a los reclusos y facilitar su reintegración a la sociedad una vez que han cumplido su condena. Esto implica proporcionar programas de educación, capacitación laboral y servicios de apoyo psicológico y social para ayudar a los reclusos a cambiar su comportamiento y adquirir habilidades que les permitan llevar una vida productiva fuera de la prisión.</span></h4>
+<img src="img/fnd.png" >
+
+
+
+<h4>
+
+   <span> Seguridad:</span>Los CERESOs suelen tener diferentes niveles de seguridad, desde prisiones de mínima seguridad hasta prisiones de máxima seguridad, dependiendo del tipo de reclusos que alojan y la peligrosidad de los mismos. Las prisiones de máxima seguridad están diseñadas para reclusos con un historial de comportamiento violento o peligroso.
+    <br><br>
+    <span>Condiciones de Vida:</span> Las condiciones de vida en un CERESO pueden variar significativamente de una institución a otra y dependen en gran medida de factores como la financiación, la ubicación y las políticas del gobierno local o estatal. En general, los reclusos tienen horarios regulados, acceso limitado a ciertas comodidades y restricciones en su libertad de movimiento.
+    <br><br>
+    <span>Reinserción y Programas de Rehabilitación:</span> Los CERESOs suelen ofrecer una variedad de programas de rehabilitación, que pueden incluir educación, capacitación laboral, terapia individual y grupal, y programas de prevención de la reincidencia delictiva. El objetivo es ayudar a los reclusos a adquirir habilidades y conocimientos que les permitan reintegrarse con éxito en la sociedad después de su liberación.
+  
+</center>
+
+
+<footer>
+    <p>Avitia Diego Ramon 5-I&copy; 2023</p>
+  </footer>
+</body>
+</html>
